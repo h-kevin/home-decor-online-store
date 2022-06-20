@@ -1,0 +1,7 @@
+/* Palette */
+html,
+body {
+  --primary: #D27A49;
+  --secondary: #E8A27C;
+  --tertiary: #FFF5F5;
+}
