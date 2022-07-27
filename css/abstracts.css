@@ -1,7 +1,16 @@
-/* Palette */
 html,
 body {
+  /* Palette */
   --primary: #D27A49;
   --secondary: #E8A27C;
   --tertiary: #FFF5F5;
+
+  /* Fonts */
+  --base-font-family: 'ACaslonPro-Regular';
+  --base-font-size: 16px;
+  --tablet-font-size: 14px;
+  --mobile-font-size: 12px;
+
+  /* Distances */
+  --default-padding: 15px;
 }
