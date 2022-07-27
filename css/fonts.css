@@ -1,0 +1,61 @@
+/* Font faces */
+
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url('../fonts/Circe/Circe-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Circe-ExtraBold';
+  src: url('../fonts/Circe/Circe-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'CRC25';
+  src: url('../fonts/Circe/CRC25.otf');
+}
+
+@font-face {
+  font-family: 'CRC35';
+  src: url('../fonts/Circe/CRC35.otf');
+}
+
+@font-face {
+  font-family: 'CRC55';
+  src: url('../fonts/Circe/CRC55.otf');
+}
+
+@font-face {
+  font-family: 'ACaslonPro-Bold';
+  src: url('../fonts/New-Yorker-Font/ACaslonPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'ACaslonPro-BoldItalic';
+  src: url('../fonts/New-Yorker-Font/ACaslonPro-BoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'ACaslonPro-Italic';
+  src: url('../fonts/New-Yorker-Font/ACaslonPro-Italic.otf');
+}
+
+@font-face {
+  font-family: 'ACaslonPro-Regular';
+  src: url('../fonts/New-Yorker-Font/ACaslonPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'ACaslonPro-Semibold';
+  src: url('../fonts/New-Yorker-Font/ACaslonPro-Semibold.otf');
+}
+
+@font-face {
+  font-family: 'ACaslonPro-SemiboldItalic';
+  src: url('../fonts/New-Yorker-Font/ACaslonPro-SemiboldItalic.otf');
+}
+
+@font-face {
+  font-family: 'NY Irvin';
+  src: url('../fonts/New-Yorker-Font/NY\ Irvin.ttf');
+}
