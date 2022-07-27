@@ -1,3 +1,27 @@
 /* Imports */
 @import url(./fonts.css);
 @import url(./abstracts.css);
+
+html,
+body {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+}
+
+/* Tablet styles */
+@media screen and (max-width: 991px) {
+
+  html,
+  body {
+    font-size: var(--tablet-font-size);
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    font-size: var(--mobile-font-size);
+  }
+}
