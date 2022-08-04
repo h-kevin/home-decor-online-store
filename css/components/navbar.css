@@ -1,0 +1,73 @@
+/* Container */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: minmax(0, max-content);
+  align-items: center;
+  gap: 15px;
+  line-height: 1;
+  font-family: 'NY Irvin';
+  color: var(--default);
+  border-bottom: 1px solid var(--default);
+  padding-bottom: 30px;
+  user-select: none;
+}
+
+/* Logo */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  cursor: pointer;
+}
+
+.navbar .logo svg {
+  fill: var(--default);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Header */
+.navbar .header {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Favorite and cart icon container */
+.navbar .fav-and-cart-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Favorite and cart icon */
+.navbar .fav-and-cart-container i {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar .fav-and-cart-container i svg {
+  fill: var(--default);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 991px) {
+
+  .navbar svg path,
+  .navbar svg rect {
+    transform: scale(.8);
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  .navbar svg path,
+  .navbar svg rect {
+    transform: scale(.7);
+  }
+}

@@ -1,6 +1,7 @@
 /* Imports */
 @import url(./fonts.css);
 @import url(./abstracts.css);
+@import url(./components/index.css);
 
 html,
 body {
