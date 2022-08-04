@@ -1,5 +1,11 @@
 import setSvgForIcon from "./helpers/setSvgForIcon.js";
 
+// Prepend navbar on top of the body
+
+const navbarTemplate = document.getElementById('navigator-common-component');
+const navbar = navbarTemplate.content.firstElementChild.cloneNode(true);
+document.body.prepend(navbar);
+
 // Setting icons for the navbar elements
 
 const logoIcon = document.querySelector('.navbar .logo');
