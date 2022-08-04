@@ -4,6 +4,7 @@ body {
   --primary: #D27A49;
   --secondary: #E8A27C;
   --tertiary: #FFF5F5;
+  --default: #b29182;
 
   /* Fonts */
   --base-font-family: 'ACaslonPro-Regular';
@@ -12,5 +13,5 @@ body {
   --mobile-font-size: 12px;
 
   /* Distances */
-  --default-padding: 15px;
+  --default-padding: 30px 100px;
 }

@@ -6,6 +6,10 @@
   align-items: center;
   gap: 15px;
   line-height: 1;
+  font-family: 'NY Irvin';
+  color: var(--default);
+  border-bottom: 1px solid var(--default);
+  padding-bottom: 30px;
   user-select: none;
 }
 
@@ -18,6 +22,7 @@
 }
 
 .navbar .logo svg {
+  fill: var(--default);
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -25,6 +30,7 @@
 /* Header */
 .navbar .header {
   margin: 0;
+  font-weight: normal;
 }
 
 /* Favorite and cart icon container */
@@ -43,15 +49,10 @@
 }
 
 .navbar .fav-and-cart-container i svg {
+  fill: var(--default);
   height: 1.5rem;
   width: 1.5rem;
 }
-
-/* Favorite icon */
-.navbar .fav-and-cart-container .favorite {}
-
-/* Cart icon */
-.navbar .fav-and-cart-container .cart {}
 
 /* Tablet styles */
 @media screen and (max-width: 991px) {
