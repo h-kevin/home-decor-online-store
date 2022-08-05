@@ -18,13 +18,8 @@
   display: flex;
   align-items: center;
   width: max-content;
+  font-size: 150%;
   cursor: pointer;
-}
-
-.navbar .logo svg {
-  fill: var(--default);
-  height: 1.5rem;
-  width: 1.5rem;
 }
 
 /* Header */
@@ -45,29 +40,6 @@
 .navbar .fav-and-cart-container i {
   display: flex;
   align-items: center;
+  font-size: 150%;
   cursor: pointer;
-}
-
-.navbar .fav-and-cart-container i svg {
-  fill: var(--default);
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-/* Tablet styles */
-@media screen and (max-width: 991px) {
-
-  .navbar svg path,
-  .navbar svg rect {
-    transform: scale(.8);
-  }
-}
-
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-
-  .navbar svg path,
-  .navbar svg rect {
-    transform: scale(.7);
-  }
 }
