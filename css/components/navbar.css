@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   width: max-content;
+  font-size: 150%;
   cursor: pointer;
 }
 
@@ -39,5 +40,6 @@
 .navbar .fav-and-cart-container i {
   display: flex;
   align-items: center;
+  font-size: 150%;
   cursor: pointer;
 }
