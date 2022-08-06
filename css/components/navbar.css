@@ -6,8 +6,8 @@
   align-items: center;
   gap: 15px;
   line-height: 1;
-  color: var(--default);
-  border-bottom: 1px solid var(--default);
+  color: var(--header);
+  border-bottom: 1px solid var(--header);
   padding-bottom: 30px;
   user-select: none;
 }
