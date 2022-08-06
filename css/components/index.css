@@ -1,2 +1,11 @@
 /* Imports */
 @import url('./navbar.css');
+@import url('./top-section.css');
+
+/* App container */
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, auto);
+}

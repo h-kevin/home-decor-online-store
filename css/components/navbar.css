@@ -4,10 +4,10 @@
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: minmax(0, max-content);
   align-items: center;
-  gap: 15px;
+  gap: var(--default-gap);
   line-height: 1;
-  color: var(--default);
-  border-bottom: 1px solid var(--default);
+  color: var(--header);
+  border-bottom: 1px solid var(--header);
   padding-bottom: 30px;
   user-select: none;
 }
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 10px;
+  gap: var(--small-gap);
 }
 
 /* Favorite and cart icon */
