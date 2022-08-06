@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: minmax(0, max-content);
-  gap: 15px;
+  gap: var(--default-gap);
   color: var(--header);
 }
 
@@ -16,7 +16,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: var(--default-gap);
 }
 
 .left-col .image {
@@ -35,7 +35,7 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: var(--default-gap);
 }
 
 .middle-col .main-message {
@@ -55,13 +55,13 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: var(--default-gap);
 }
 
 .right-col .image-with-description {
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
+  gap: var(--small-gap);
 }
 
 /* Image with social link */
@@ -70,8 +70,8 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 5px;
-  line-height: 1;
+  gap: var(--x-small-gap);
+  font-size: 100%;
 }
 
 .social {
@@ -97,12 +97,13 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px 30px;
   border: none;
   border-radius: 50px;
   background-color: var(--secondary);
   font-family: var(--secondary-font-bold);
   color: var(--white);
+  white-space: nowrap;
   cursor: pointer;
 }
 
