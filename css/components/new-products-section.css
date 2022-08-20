@@ -26,6 +26,9 @@
 .product-card {
   flex: 1;
   width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--small-gap);
 }
 
 .product-card .image {
@@ -33,6 +36,22 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.product-card .name,
+.product-card .price {
+  font-size: 100%;
+  font-family: var(--secondary-font);
+  line-height: 1;
+  margin: 0;
+}
+
+.product-card .name {
+  color: var(--header);
+}
+
+.product-card .price {
+  color: var(--primary);
 }
 
 /* Assigning the images to each product */
