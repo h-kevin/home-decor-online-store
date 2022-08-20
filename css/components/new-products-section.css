@@ -1,0 +1,95 @@
+/* New products container */
+.new-products-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: var(--default-gap);
+}
+
+/* Title */
+.new-products-section .section-title {
+  font-size: 250%;
+  text-align: center;
+  color: var(--header);
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Products list */
+.new-products-section .products-list {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: var(--default-gap);
+}
+
+.products-list .product-card {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--small-gap);
+}
+
+.product-card .image {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-card .name,
+.product-card .price {
+  font-size: 100%;
+  font-family: var(--secondary-font);
+  line-height: 1;
+  margin: 0;
+}
+
+.product-card .name {
+  color: var(--header);
+}
+
+.product-card .price {
+  color: var(--primary);
+}
+
+/* Assigning the images to each product */
+.product-card .img-1 {
+  background-image: url(../../img/scented-candle.jpg);
+}
+
+.product-card .img-2 {
+  background-image: url(../../img/beige-ceramic-vase.jpg);
+}
+
+.product-card .img-3 {
+  background-image: url(../../img/black-ceramic-vase.jpg);
+}
+
+.product-card .img-4 {
+  background-image: url(../../img/handmade-soap.jpg);
+}
+
+/* All products shortcut */
+.new-products-section .all-products-shortcut {
+  align-self: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  font-family: var(--secondary-font-bold);
+  color: var(--white);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.new-products-section .all-products-shortcut:hover,
+.new-products-section .all-products-shortcut:focus,
+.new-products-section .all-products-shortcut:active {
+  opacity: .8;
+}

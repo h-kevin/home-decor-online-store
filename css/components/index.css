@@ -1,6 +1,7 @@
 /* Imports */
 @import url('./navbar.css');
 @import url('./top-section.css');
+@import url('./new-products-section.css');
 
 /* App container */
 .app {
@@ -8,4 +9,5 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: minmax(0, auto);
+  gap: var(--large-gap);
 }

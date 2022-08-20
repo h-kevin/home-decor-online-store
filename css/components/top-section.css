@@ -108,7 +108,7 @@
 }
 
 .right-col .catalogue-shortcut:hover,
-.right-col.catalogue-shortcut:focus,
-.right-col.catalogue-shortcut:active {
+.right-col .catalogue-shortcut:focus,
+.right-col .catalogue-shortcut:active {
   opacity: .8;
 }
