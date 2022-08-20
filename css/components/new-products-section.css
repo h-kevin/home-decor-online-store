@@ -3,6 +3,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  gap: var(--default-gap);
 }
 
 /* Title */
