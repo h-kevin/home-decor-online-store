@@ -1,2 +1,7 @@
 /* Products by category section container */
-.products-by-category-section {}
+.products-by-category-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--default-gap);
+}
