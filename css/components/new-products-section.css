@@ -5,6 +5,15 @@
   justify-content: center;
 }
 
+/* Title */
+.section-title {
+  font-size: 250%;
+  text-align: center;
+  color: var(--header);
+  font-weight: normal;
+  margin: 0;
+}
+
 /* Products list */
 .products-list {
   display: flex;
