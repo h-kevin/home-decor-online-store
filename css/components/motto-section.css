@@ -4,3 +4,12 @@
   flex-flow: column nowrap;
   gap: var(--default-gap);
 }
+
+/* Motto */
+.motto-section .motto {
+  font-size: 150%;
+  text-align: center;
+  color: var(--default);
+  font-weight: normal;
+  margin: 0;
+}
