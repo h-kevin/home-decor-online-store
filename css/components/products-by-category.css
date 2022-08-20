@@ -25,6 +25,35 @@
   width: 100%;
 }
 
+.categories-list-container .product-preview-placeholder {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.product-preview-placeholder.left-placeholder {
+  justify-content: flex-start;
+}
+
+.product-preview-placeholder.right-placeholder {
+  justify-content: flex-end;
+}
+
+.product-preview-placeholder .product-image {
+  height: 100%;
+  width: 100%;
+  max-width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.product-preview-placeholder.left-placeholder .product-image {
+  background-position: top left;
+}
+
+.product-preview-placeholder.right-placeholder .product-image {
+  background-position: bottom right;
+}
+
 .categories-list-container .categories {
   display: flex;
   flex-flow: column nowrap;
