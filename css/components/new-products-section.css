@@ -7,7 +7,7 @@
 }
 
 /* Title */
-.section-title {
+.new-products-section .section-title {
   font-size: 250%;
   text-align: center;
   color: var(--header);
@@ -16,14 +16,14 @@
 }
 
 /* Products list */
-.products-list {
+.new-products-section .products-list {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: var(--default-gap);
 }
 
-.product-card {
+.products-list .product-card {
   flex: 1;
   width: 100%;
   display: flex;
@@ -69,4 +69,27 @@
 
 .product-card .img-4 {
   background-image: url(../../img/handmade-soap.jpg);
+}
+
+/* All products shortcut */
+.new-products-section .all-products-shortcut {
+  align-self: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  font-family: var(--secondary-font-bold);
+  color: var(--white);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.new-products-section .all-products-shortcut:hover,
+.new-products-section .all-products-shortcut:focus,
+.new-products-section .all-products-shortcut:active {
+  opacity: .8;
 }
