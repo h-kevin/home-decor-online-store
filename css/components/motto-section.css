@@ -1,2 +1,6 @@
 /* Motto section container */
-.motto-section {}
+.motto-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--default-gap);
+}
