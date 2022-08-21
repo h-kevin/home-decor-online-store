@@ -44,13 +44,16 @@
   max-width: 200px;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: opacity .5s;
 }
 
 .product-preview-placeholder.left-placeholder .product-image {
+  background-image: url('../../img/candles2.jpg');
   background-position: top left;
 }
 
 .product-preview-placeholder.right-placeholder .product-image {
+  background-image: url('../../img/candles3.jpg');
   background-position: bottom right;
 }
 
