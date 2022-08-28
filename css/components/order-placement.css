@@ -1,0 +1,29 @@
+/* Order placement process description section container */
+.how-to-place-order-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--default-gap);
+}
+
+/* Title */
+.how-to-place-order-section .section-title {
+  font-size: 250%;
+  text-align: center;
+  color: var(--header);
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Description cards container */
+.how-to-place-order-section .order-placement-process-description {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--default-gap);
+}
+
+/* Description card */
+.how-to-place-order-section .description-card {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--small-gap);
+}
