@@ -1,0 +1,59 @@
+/* Order placement process description section container */
+.how-to-place-order-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--default-gap);
+}
+
+/* Title */
+.how-to-place-order-section .section-title {
+  font-size: 250%;
+  text-align: center;
+  color: var(--header);
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Description cards container */
+.how-to-place-order-section .order-placement-process-description {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--large-gap);
+}
+
+/* Description card */
+.how-to-place-order-section .description-card {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--small-gap);
+  text-align: center;
+}
+
+.how-to-place-order-section .description-card .icon {
+  font-size: 200%;
+  color: var(--white);
+  background-color: var(--secondary);
+  padding: 15px;
+  width: max-content;
+  box-sizing: border-box;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.how-to-place-order-section .description-card .header {
+  font-size: 100%;
+  font-family: var(--secondary-font-bold);
+  color: var(--default);
+  line-height: 1;
+  margin: 0;
+}
+
+.how-to-place-order-section .description-card .description {
+  font-size: 100%;
+  font-family: var(--secondary-font);
+  color: var(--default);
+  line-height: 1;
+  margin: 0;
+}
