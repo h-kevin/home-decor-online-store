@@ -12,8 +12,8 @@
   user-select: none;
 }
 
-/* Logo */
-.navbar .logo {
+/* Menu icon */
+.navbar .menu {
   display: flex;
   align-items: center;
   width: max-content;
@@ -21,8 +21,8 @@
   cursor: pointer;
 }
 
-/* Header */
-.navbar .header {
+/* Logo */
+.navbar .logo {
   margin: 0;
   font-weight: normal;
 }
