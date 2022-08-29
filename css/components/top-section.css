@@ -1,0 +1,111 @@
+/* Top section container */
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: minmax(0, max-content);
+  gap: var(--default-gap);
+  color: var(--header);
+}
+
+.top-section .image {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+/* Left column */
+.top-section .left-col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: var(--default-gap);
+}
+
+.top-section .left-col .text {
+  margin: 0;
+  font-size: 75%;
+  font-family: var(--secondary-font);
+}
+
+/* Middle column */
+.top-section .middle-col {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--default-gap);
+}
+
+.top-section .middle-col .main-message {
+  margin: 0;
+  text-align: center;
+  font-size: 250%;
+  font-weight: normal;
+  max-width: 80%;
+}
+
+.top-section .middle-col .image {
+  max-width: 50%;
+}
+
+/* Right column */
+.top-section .right-col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: var(--default-gap);
+}
+
+.top-section .right-col .image-with-description {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--small-gap);
+}
+
+/* Image with social link */
+.top-section .image-with-description .social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--x-small-gap);
+  font-size: 100%;
+}
+
+.top-section .social {
+  cursor: pointer;
+  user-select: none;
+  width: max-content;
+}
+
+.top-section .social .icon {
+  height: 1rem;
+}
+
+.top-section .social .text {
+  font-family: var(--secondary-font);
+  color: var(--primary);
+  font-size: 75%;
+}
+
+/* Shortcut button */
+.top-section .right-col .catalogue-shortcut {
+  align-self: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  font-family: var(--secondary-font-bold);
+  color: var(--white);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.top-section .right-col .catalogue-shortcut:hover,
+.top-section .right-col .catalogue-shortcut:focus,
+.top-section .right-col .catalogue-shortcut:active {
+  opacity: .8;
+}

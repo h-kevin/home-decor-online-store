@@ -1,0 +1,43 @@
+/* Imports */
+@import url(./fonts.css);
+@import url(./abstracts.css);
+@import url(./components/index.css);
+
+html,
+body {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1500px;
+}
+
+body {
+  overflow-y: auto;
+  background-color: var(--tertiary);
+  padding: var(--default-padding);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, max-content) minmax(0, auto);
+  gap: var(--large-gap);
+}
+
+/* Tablet styles */
+@media screen and (max-width: 991px) {
+
+  html,
+  body {
+    font-size: var(--tablet-font-size);
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    font-size: var(--mobile-font-size);
+  }
+}

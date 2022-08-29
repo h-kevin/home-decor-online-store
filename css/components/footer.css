@@ -1,0 +1,88 @@
+/* Footer container */
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--default-gap);
+  justify-content: space-between;
+  border-top: 1px solid var(--header);
+  padding-top: 30px;
+  line-height: 1;
+}
+
+/* Footer column */
+.footer .footer-column {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--default-gap);
+}
+
+.footer .footer-column .footer-section-header {
+  font-size: 100%;
+  font-family: var(--secondary-font-bold);
+  color: var(--header);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer .footer-column .link {
+  font-size: 100%;
+  font-family: var(--secondary-font);
+  color: var(--header);
+  text-decoration: none;
+  width: max-content;
+  margin: 0;
+}
+
+.footer .footer-column .link:hover,
+.footer .footer-column .link:focus,
+.footer .footer-column .link:active {
+  text-decoration: underline;
+}
+
+/* Logo */
+.footer .logo {
+  flex: 1;
+  margin: 0;
+  font-weight: normal;
+  font-size: 150%;
+  color: var(--header);
+  user-select: none;
+}
+
+/* Subscription form */
+.footer .newsletter-subscription-form .form-group {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: var(--header);
+  line-height: 1;
+  border: 1px solid var(--header);
+  width: max-content;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.footer .newsletter-subscription-form .form-group .input {
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  font-size: 100%;
+  color: var(--header);
+  font-family: var(--secondary-font);
+  outline: none;
+}
+
+.footer .newsletter-subscription-form .form-group .input::placeholder {
+  color: var(--header);
+  font-size: 100%;
+}
+
+.footer .newsletter-subscription-form .form-group .submit-action {
+  border-left: 1px solid var(--header);
+  font-size: 150%;
+  line-height: 1.5;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}

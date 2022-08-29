@@ -1,0 +1,21 @@
+/* Font faces */
+
+@font-face {
+  font-family: 'NewYorker-Regular';
+  src: url(../fonts/NewYorker/NewYorker-Regular.tff);
+}
+
+@font-face {
+  font-family: 'Circe-Regular';
+  src: url(../fonts/Circe/Circe-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Circe-Bold';
+  src: url(../fonts/Circe/Circe-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Circe-Light';
+  src: url(../fonts/Circe/Circe-Light.ttf);
+}
