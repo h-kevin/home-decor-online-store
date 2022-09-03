@@ -117,3 +117,35 @@
     text-align: center;
   }
 }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  .top-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .top-section .left-col .image,
+  .top-section .right-col .image-with-description {
+    display: none;
+  }
+
+  .top-section .left-col {
+    order: 1;
+  }
+
+  .top-section .right-col {
+    order: 2;
+  }
+
+  .top-section .left-col .text {
+    text-align: center;
+  }
+
+  .top-section .middle-col .main-message,
+  .top-section .middle-col .image {
+    max-width: 100%;
+  }
+}
