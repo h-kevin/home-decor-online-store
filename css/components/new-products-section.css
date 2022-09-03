@@ -67,11 +67,11 @@
 
 .new-products-section .product-card .image .favorite-icon {
   font-size: 150%;
-  color: var(--primary);
+  color: var(--default);
   margin: var(--small-gap);
   padding: var(--x-small-gap);
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: var(--tertiary);
   user-select: none;
   cursor: pointer;
 }
