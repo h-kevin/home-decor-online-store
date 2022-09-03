@@ -1,7 +1,7 @@
 /* Top section container */
 .top-section {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr minmax(0, 3fr) 1fr;
   grid-template-rows: minmax(0, max-content);
   gap: var(--default-gap);
   color: var(--header);
@@ -108,4 +108,12 @@
 .top-section .right-col .catalogue-shortcut:focus,
 .top-section .right-col .catalogue-shortcut:active {
   opacity: .8;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 991px) {
+  .top-section .right-col .catalogue-shortcut {
+    white-space: normal;
+    text-align: center;
+  }
 }

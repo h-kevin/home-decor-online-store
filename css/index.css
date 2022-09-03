@@ -16,7 +16,7 @@ body {
 body {
   overflow-y: auto;
   background-color: var(--tertiary);
-  padding: var(--default-padding);
+  padding: 30px 100px;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -30,6 +30,10 @@ body {
   html,
   body {
     font-size: var(--tablet-font-size);
+  }
+
+  body {
+    padding: var(--default-gap);
   }
 }
 
