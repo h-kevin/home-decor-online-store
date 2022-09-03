@@ -22,6 +22,7 @@ body {
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: minmax(0, max-content) minmax(0, auto);
   gap: var(--large-gap);
+  overflow-x: hidden;
 }
 
 /* Tablet styles */

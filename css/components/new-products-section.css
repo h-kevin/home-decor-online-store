@@ -15,6 +15,31 @@
   margin: 0;
 }
 
+/* Mobile image navigation arrows */
+.new-products-section .nav-arrows {
+  align-self: center;
+  display: none;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: calc(var(--default-gap) / 3);
+  margin-bottom: -20px;
+  width: max-content;
+  transform: scaleX(3);
+}
+
+.new-products-section .nav-arrows .arrow {
+  font-size: 150%;
+  color: var(--primary);
+  user-select: none;
+  cursor: pointer;
+}
+
+.new-products-section .nav-arrows .arrow.left {
+  transform: rotate(180deg);
+}
+
+.new-products-section .nav-arrows .arrow.right {}
+
 /* Products list */
 .new-products-section .products-list {
   display: flex;
@@ -23,7 +48,7 @@
   gap: var(--default-gap);
 }
 
-.products-list .product-card {
+.new-products-section .products-list .product-card {
   flex: 1;
   width: 100%;
   display: flex;
@@ -31,43 +56,43 @@
   gap: var(--small-gap);
 }
 
-.product-card .image {
+.new-products-section .product-card .image {
   min-height: 300px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.product-card .name,
-.product-card .price {
+.new-products-section .product-card .name,
+.new-products-section .product-card .price {
   font-size: 100%;
   font-family: var(--secondary-font);
   line-height: 1;
   margin: 0;
 }
 
-.product-card .name {
+.new-products-section .product-card .name {
   color: var(--header);
 }
 
-.product-card .price {
+.new-products-section .product-card .price {
   color: var(--primary);
 }
 
 /* Assigning the images to each product */
-.product-card .img-1 {
+.new-products-section .product-card .img-1 {
   background-image: url(../../img/scented-candle.jpg);
 }
 
-.product-card .img-2 {
+.new-products-section .product-card .img-2 {
   background-image: url(../../img/beige-ceramic-vase.jpg);
 }
 
-.product-card .img-3 {
+.new-products-section .product-card .img-3 {
   background-image: url(../../img/black-ceramic-vase.jpg);
 }
 
-.product-card .img-4 {
+.new-products-section .product-card .img-4 {
   background-image: url(../../img/handmade-soap.jpg);
 }
 
@@ -92,4 +117,24 @@
 .new-products-section .all-products-shortcut:focus,
 .new-products-section .all-products-shortcut:active {
   opacity: .8;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .new-products-section .nav-arrows {
+    display: flex;
+  }
+
+  .new-products-section .products-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+
+  .new-products-section .product-card {
+    scroll-snap-align: start;
+    min-width: 100%;
+  }
+
+  .new-products-section .product-card .image {}
 }
