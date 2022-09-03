@@ -42,3 +42,12 @@
   font-size: 150%;
   cursor: pointer;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}

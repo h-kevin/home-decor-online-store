@@ -1,7 +1,7 @@
 /* Top section container */
 .top-section {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr minmax(0, 3fr) 1fr;
   grid-template-rows: minmax(0, max-content);
   gap: var(--default-gap);
   color: var(--header);
@@ -36,10 +36,6 @@
 }
 
 .top-section .middle-col .main-message {
-  margin: 0;
-  text-align: center;
-  font-size: 250%;
-  font-weight: normal;
   max-width: 80%;
 }
 
@@ -90,22 +86,44 @@
 /* Shortcut button */
 .top-section .right-col .catalogue-shortcut {
   align-self: flex-start;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 50px;
-  background-color: var(--secondary);
-  font-family: var(--secondary-font-bold);
-  color: var(--white);
-  white-space: nowrap;
-  cursor: pointer;
 }
 
-.top-section .right-col .catalogue-shortcut:hover,
-.top-section .right-col .catalogue-shortcut:focus,
-.top-section .right-col .catalogue-shortcut:active {
-  opacity: .8;
+/* Tablet styles */
+@media screen and (max-width: 991px) {
+  .top-section .right-col .catalogue-shortcut {
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+  .top-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .top-section .left-col .image,
+  .top-section .right-col .image-with-description {
+    display: none;
+  }
+
+  .top-section .left-col {
+    order: 1;
+  }
+
+  .top-section .right-col {
+    order: 2;
+  }
+
+  .top-section .left-col .text {
+    text-align: center;
+  }
+
+  .top-section .middle-col .main-message,
+  .top-section .middle-col .image {
+    max-width: 100%;
+  }
 }

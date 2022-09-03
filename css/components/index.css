@@ -1,4 +1,5 @@
 /* Imports */
+@import url("./common.css");
 @import url('./navbar.css');
 @import url('./top-section.css');
 @import url('./new-products-section.css');

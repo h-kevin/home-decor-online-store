@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Home decor online store</title>
+  <title>MIRACLE: Home Decor</title>
+  <link
+    rel="icon"
+    href="./img/favicon.png"
+  />
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
@@ -33,9 +37,6 @@
 
       <!-- Middle column -->
       <div class="middle-col">
-        <h1 class="main-message">
-          CREATE A COZY ATMOSPHERE FOR YOUR HOME WITH US
-        </h1>
         <img
           class="image"
           src="./img/pillows.webp"
@@ -61,41 +62,48 @@
             <span class="text">INSTAGRAM</span>
           </div>
         </div>
-        <button class="catalogue-shortcut">To the catalogue</button>
       </div>
     </div>
 
     <!-- New products -->
     <div class="new-products-section">
-      <!-- Title -->
-      <h1 class="section-title">NEW PRODUCTS</h1>
+      <!-- Mobile image navigation arrows -->
+      <div class="nav-arrows">
+        <i class="arrow left material-icons">trending_flat</i>
+        <i class="arrow right material-icons">trending_flat</i>
+      </div>
 
       <!-- List of products -->
       <div class="products-list">
-        <div class="product-card">
-          <div class="image img-1"></div>
+        <div class="product-card active">
+          <div class="image img-1">
+            <i class="favorite-icon material-icons">favorite_border</i>
+          </div>
           <p class="name">Scented Candle</p>
           <p class="price">15 $</p>
         </div>
         <div class="product-card">
-          <div class="image img-2"></div>
+          <div class="image img-2">
+            <i class="favorite-icon material-icons">favorite_border</i>
+          </div>
           <p class="name">Beige Ceramic Vase</p>
           <p class="price">35 $</p>
         </div>
         <div class="product-card">
-          <div class="image img-3"></div>
+          <div class="image img-3">
+            <i class="favorite-icon material-icons">favorite_border</i>
+          </div>
           <p class="name">Black Ceramic Vase</p>
           <p class="price">18 $</p>
         </div>
         <div class="product-card">
-          <div class="image img-4"></div>
+          <div class="image img-4">
+            <i class="favorite-icon material-icons">favorite_border</i>
+          </div>
           <p class="name">Handmade Soap</p>
           <p class="price">10 $</p>
         </div>
       </div>
-
-      <!-- All products button -->
-      <button class="all-products-shortcut">All products</button>
     </div>
 
     <!-- Motto section -->
@@ -112,9 +120,6 @@
 
     <!-- Products by category -->
     <div class="products-by-category-section">
-      <!-- Title -->
-      <h1 class="section-title">HARMONY IN THE DETAILS</h1>
-
       <!-- Categories list and products preview -->
       <div class="categories-list-container">
         <div class="product-preview-placeholder left-placeholder">
@@ -130,16 +135,10 @@
           <div class="product-image"></div>
         </div>
       </div>
-
-      <!-- All products button -->
-      <button class="all-products-shortcut">All products</button>
     </div>
 
     <!-- How to place an order section -->
     <div class="how-to-place-order-section">
-      <!-- Title -->
-      <h1 class="section-title">HOW TO PLACE AN ORDER</h1>
-
       <!-- Order placement process description -->
       <div class="order-placement-process-description">
         <div class="placing-order description-card">
@@ -171,9 +170,6 @@
 
     <!-- Social media subscription -->
     <div class="social-media-subscription-section">
-      <!-- Title -->
-      <h1 class="section-title">SUBSCRIBE TO OUR INSTAGRAM</h1>
-
       <!-- Images and media links container -->
       <div class="media-container">
         <!-- Left column -->
@@ -217,109 +213,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Templates -->
-  <template id="navigator-common-component">
-    <nav class="navbar">
-      <i class="menu material-icons">menu</i>
-      <h1 class="logo">MIRACLE</h1>
-      <div class="fav-and-cart-container">
-        <i class="favorite material-icons">favorite_border</i>
-        <i class="cart material-icons-outlined">shopping_bag</i>
-      </div>
-    </nav>
-  </template>
-  <template id="footer-common-component">
-    <div class="footer">
-      <h1 class="logo">MIRACLE</h1>
-      <div class="catalogue footer-column">
-        <p class="footer-section-header">Catalogue</p>
-        <a
-          class="link"
-          href="#"
-        >
-          Candles
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          Vases
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          Textile
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          Cosmetic
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          All products
-        </a>
-      </div>
-      <div class="for-buyers footer-column">
-        <p class="footer-section-header">For buyers</p>
-        <a
-          class="link"
-          href="#"
-        >
-          About us
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          How to place an order
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          Discounts
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          Instagram
-        </a>
-      </div>
-      <div class="subscribe-to-newsletter footer-column">
-        <p class="footer-section-header">Subscribe to our newsletter</p>
-        <form class="newsletter-subscription-form">
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              class="input"
-              placeholder="E-mail"
-            />
-            <span class="submit-action material-icons">arrow_forward_ios</span>
-          </div>
-        </form>
-        <a
-          class="link"
-          href="#"
-        >
-          Privacy policy
-        </a>
-        <a
-          class="link"
-          href="#"
-        >
-          Contract offers
-        </a>
-      </div>
-    </div>
-  </template>
 
   <!-- Scripts -->
   <script

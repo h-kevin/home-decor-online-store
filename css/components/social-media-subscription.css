@@ -6,15 +6,6 @@
   gap: var(--default-gap);
 }
 
-/* Title */
-.social-media-subscription-section .section-title {
-  font-size: 250%;
-  text-align: center;
-  color: var(--header);
-  font-weight: normal;
-  margin: 0;
-}
-
 /* Social media and images */
 .social-media-subscription-section .media-container {
   display: grid;
@@ -86,4 +77,19 @@
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .social-media-subscription-section .media-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-media-subscription-section .media-container .left-col,
+  .social-media-subscription-section .media-container .right-col {
+    display: none;
+  }
 }

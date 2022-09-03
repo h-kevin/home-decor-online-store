@@ -2,16 +2,8 @@
 .how-to-place-order-section {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   gap: var(--default-gap);
-}
-
-/* Title */
-.how-to-place-order-section .section-title {
-  font-size: 250%;
-  text-align: center;
-  color: var(--header);
-  font-weight: normal;
-  margin: 0;
 }
 
 /* Description cards container */
@@ -57,4 +49,18 @@
   color: var(--default);
   line-height: 1;
   margin: 0;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .how-to-place-order-section .order-placement-process-description {
+    flex-flow: column nowrap;
+    gap: var(--default-gap);
+    max-width: 300px;
+    padding: 0;
+  }
+
+  .how-to-place-order-section .description-card {
+    gap: var(--small-gap);
+  }
 }
