@@ -55,10 +55,25 @@
 }
 
 .new-products-section .product-card .image {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
   min-height: 300px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.new-products-section .product-card .image .favorite-icon {
+  font-size: 150%;
+  color: var(--primary);
+  margin: var(--small-gap);
+  padding: var(--x-small-gap);
+  border-radius: 50%;
+  background-color: var(--white);
+  user-select: none;
+  cursor: pointer;
 }
 
 .new-products-section .product-card .name,
@@ -124,8 +139,7 @@
   }
 
   .new-products-section .products-list {
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
   }
 
