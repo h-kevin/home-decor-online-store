@@ -38,8 +38,6 @@
   transform: rotate(180deg);
 }
 
-.new-products-section .nav-arrows .arrow.right {}
-
 /* Products list */
 .new-products-section .products-list {
   display: flex;
@@ -135,6 +133,4 @@
     scroll-snap-align: start;
     min-width: 100%;
   }
-
-  .new-products-section .product-card .image {}
 }
