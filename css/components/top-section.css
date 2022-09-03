@@ -36,10 +36,6 @@
 }
 
 .top-section .middle-col .main-message {
-  margin: 0;
-  text-align: center;
-  font-size: 250%;
-  font-weight: normal;
   max-width: 80%;
 }
 
@@ -90,24 +86,6 @@
 /* Shortcut button */
 .top-section .right-col .catalogue-shortcut {
   align-self: flex-start;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 50px;
-  background-color: var(--secondary);
-  font-family: var(--secondary-font-bold);
-  color: var(--white);
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.top-section .right-col .catalogue-shortcut:hover,
-.top-section .right-col .catalogue-shortcut:focus,
-.top-section .right-col .catalogue-shortcut:active {
-  opacity: .8;
 }
 
 /* Tablet styles */

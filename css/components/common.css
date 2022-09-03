@@ -1,0 +1,33 @@
+/* Section header */
+
+.common-section-header {
+  font-size: 250%;
+  text-align: center;
+  color: var(--header);
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Common button */
+.common-button {
+  align-self: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--secondary);
+  font-family: var(--secondary-font-bold);
+  color: var(--white);
+  white-space: nowrap;
+  cursor: pointer;
+
+}
+
+.common-button:hover,
+.common-button:focus,
+.common-button:active {
+  opacity: .8;
+}
