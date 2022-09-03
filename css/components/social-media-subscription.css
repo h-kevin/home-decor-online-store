@@ -87,3 +87,18 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .social-media-subscription-section .media-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-media-subscription-section .media-container .left-col,
+  .social-media-subscription-section .media-container .right-col {
+    display: none;
+  }
+}
