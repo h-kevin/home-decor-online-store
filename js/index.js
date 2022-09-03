@@ -1,5 +1,6 @@
 import createNavbar from '../common/navbar.js';
 import createFooter from '../common/footer.js';
+import createSectionHeader from '../common/sectionHeader.js';
 import categoryPreviewHandler from './handlers/categoryPreview.js';
 import { moveLeft, moveRight } from './handlers/newProductsNavArrows.js';
 
@@ -12,6 +13,34 @@ document.body.prepend(navbar);
 
 const footer = createFooter();
 document.body.append(footer);
+
+// Add section header
+
+const topSectionMiddleColumn = document.querySelector('.top-section .middle-col');
+topSectionMiddleColumn.prepend(createSectionHeader(
+  'CREATE A COZY ATMOSPHERE FOR YOUR HOME WITH US',
+  'main-message',
+));
+
+const newProductsSection = document.querySelector('.new-products-section');
+newProductsSection.prepend(createSectionHeader(
+  'NEW PRODUCTS',
+));
+
+const productsByCategorySection = document.querySelector('.products-by-category-section');
+productsByCategorySection.prepend(createSectionHeader(
+  'HARMONY IN THE DETAILS',
+));
+
+const orderPlacementSection = document.querySelector('.how-to-place-order-section');
+orderPlacementSection.prepend(createSectionHeader(
+  'HOW TO PLACE AN ORDER',
+));
+
+const socialMediaSubSection = document.querySelector('.social-media-subscription-section');
+socialMediaSubSection.prepend(createSectionHeader(
+  'SUBSCRIBE TO OUR INSTAGRAM',
+));
 
 // Setting click event handler for new product arrows in mobile view
 

@@ -6,15 +6,6 @@
   gap: var(--default-gap);
 }
 
-/* Title */
-.social-media-subscription-section .section-title {
-  font-size: 250%;
-  text-align: center;
-  color: var(--header);
-  font-weight: normal;
-  margin: 0;
-}
-
 /* Social media and images */
 .social-media-subscription-section .media-container {
   display: grid;

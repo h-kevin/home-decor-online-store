@@ -1,0 +1,9 @@
+/* Section header */
+
+.common-section-header {
+  font-size: 250%;
+  text-align: center;
+  color: var(--header);
+  font-weight: normal;
+  margin: 0;
+}

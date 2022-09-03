@@ -6,15 +6,6 @@
   gap: var(--default-gap);
 }
 
-/* Title */
-.new-products-section .section-title {
-  font-size: 250%;
-  text-align: center;
-  color: var(--header);
-  font-weight: normal;
-  margin: 0;
-}
-
 /* Mobile image navigation arrows */
 .new-products-section .nav-arrows {
   align-self: center;

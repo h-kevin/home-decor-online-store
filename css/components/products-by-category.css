@@ -7,15 +7,6 @@
   margin-top: calc(0px - var(--large-gap) + var(--default-gap));
 }
 
-/* Title */
-.products-by-category-section .section-title {
-  font-size: 250%;
-  text-align: center;
-  color: var(--header);
-  font-weight: normal;
-  margin: 0;
-}
-
 /* Categories list and products preview */
 .products-by-category-section .categories-list-container {
   display: grid;
