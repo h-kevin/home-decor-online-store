@@ -1,16 +1,16 @@
+import createNavbar from '../common/navbar.js';
+import createFooter from '../common/footer.js';
 import categoryPreviewHandler from './handlers/categoryPreview.js';
 import { moveLeft, moveRight } from './handlers/newProductsNavArrows.js';
 
 // Prepend navbar on top of the body
 
-const navbarTemplate = document.getElementById('navigator-common-component');
-const navbar = navbarTemplate.content.firstElementChild.cloneNode(true);
+const navbar = createNavbar();
 document.body.prepend(navbar);
 
 // Append footer after other elements of the body
 
-const footerTemplate = document.getElementById('footer-common-component');
-const footer = footerTemplate.content.firstElementChild.cloneNode(true);
+const footer = createFooter();
 document.body.append(footer);
 
 // Setting click event handler for new product arrows in mobile view
