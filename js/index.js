@@ -6,6 +6,7 @@ import categoryPreviewHandler from './handlers/categoryPreview.js';
 import { moveLeft, moveRight } from './handlers/newProductsNavArrows.js';
 
 // Select elements
+
 const topSectionMiddleColumn = document.querySelector('.top-section .middle-col');
 const topSectionRightColumn = document.querySelector('.top-section .right-col');
 const newProductsSection = document.querySelector('.new-products-section');
