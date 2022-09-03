@@ -96,29 +96,6 @@
   opacity: .8;
 }
 
-/* All products shortcut */
-.products-by-category-section .all-products-shortcut {
-  align-self: center;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 50px;
-  background-color: var(--secondary);
-  font-family: var(--secondary-font-bold);
-  color: var(--white);
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.products-by-category-section .all-products-shortcut:hover,
-.products-by-category-section .all-products-shortcut:focus,
-.products-by-category-section .all-products-shortcut:active {
-  opacity: .8;
-}
-
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .products-by-category-section .categories-list-container {
