@@ -13,7 +13,7 @@ export default (galleryItems, direction) => {
   }
 
   const currentActiveItemIndex = galleryItems.findIndex(item => item.classList.contains('active'));
-  const currentActiveItem = galleryItems.find(item => item.classList.contains('active'));
+  const currentActiveItem = galleryItems[currentActiveItemIndex];
 
   if (currentActiveItemIndex !== -1) {
     if (direction === 'left') {
